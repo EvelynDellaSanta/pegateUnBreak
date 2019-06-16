@@ -4,13 +4,35 @@ html,body{
 }
 
 #logo {
-  color: purple;
+  color: red;
   font-family: 'Satisfy', cursive;
   font-size: 32px;
 }
 
 body {
-  background-image: url("wallpaper.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
+  background: url("wallpaper.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
+
+.boton {
+  background:#ECF725 ;
+  font-size:10px;
+  color: black;
+  display:inline-block;
+  font-size: 16px;
+  margin:20px;
+  padding:10px 0px;
+  text-align: center;
+  width:200px;
+  text-decoration:none;
+  box-shadow: 0px 6px 0px orange;
+}
+
+#botonera .boton:nth-child(even)
+{
+  background:#B725F7 ;
+  box-shadow: 0px 6px 0px purple;
+  color:white;
+  }
+
+  .titulo{font-family: 'Merriweather', serif;}
