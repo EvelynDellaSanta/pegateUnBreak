@@ -30,16 +30,20 @@ header {
 nav {
   border-radius: 6px;
   background-color: aquamarine;
+  box-shadow: 0px 6px 0px turquoise;
   display: flex;
   align-items: center;
-  padding: 10px 25px;
+  height: 60px;
+}
+
+nav > div {
+  padding: 0px 15px;
 }
 
 nav .logo {
   width: 50%;
   font-size: 18px;
 }
-
 
 nav .logo a {
   color: teal;
@@ -50,38 +54,46 @@ nav .logo a {
 }
 
 nav .botonera {
-  display: flex;
   width: 25%;
-  justify-content: center;
-  align-items: stretch;
+}
+
+nav .botonera ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav .botonera li {
+  flex-grow: 1;
+  flex-basis: 0;
 }
 
 nav .botonera a {
+  padding: 10px;
+  height: 40px;
   color: black;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   text-decoration: none;
-  flex-basis: min-content;
-  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-nav .botonera a:hover {
+nav .botonera li a:hover {
   background: rgba(0,0,0,.1);
 }
 
+
 .busqueda {
   width: 25%;
-  float: left;
-  box-sizing: border-box;
 }
 
 .busqueda input {
   width: 100%;
   border-radius: 50px;
   border: 2px solid turquoise;
-  padding: 0px 10px 0px 25px;
-  box-sizing: border-box;
   height: 28px;
   background: turquoise
 }
