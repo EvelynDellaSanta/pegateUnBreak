@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-size: 18px;
 }
 
 html {
@@ -9,17 +10,12 @@ html {
 
 body {
   font-family: 'PT Sans', sans-serif;
-  background: url("wallpaper.jpg") no-repeat center center scroll;
-  background-size: cover;
   height: 100%;
 }
 
-.contenedor {
-  background-color: rgba(255, 255, 255,.5);
+.contenedor {4
+  775
   height: 100%;
-  padding-top: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 
@@ -28,7 +24,6 @@ header {
 }
 
 nav {
-  border-radius: 6px;
   background-color: aquamarine;
   box-shadow: 0px 6px 0px turquoise;
   display: flex;
@@ -54,7 +49,7 @@ nav .logo a {
 }
 
 nav .botonera {
-  width: 25%;
+  width: 50%;
 }
 
 nav .botonera ul {
@@ -84,7 +79,6 @@ nav .botonera a {
 nav .botonera li a:hover {
   background: rgba(0,0,0,.1);
 }
-
 
 .busqueda {
   width: 25%;
@@ -137,11 +131,13 @@ section {
   margin: 20px;
 }
 
-section#categorias {
+section.categorias {
   border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-section#categorias div.pais {
+section.categorias div.pais {
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -150,13 +146,13 @@ section#categorias div.pais {
   display: inline-block;
 }
 
-section#categorias .pais .foto {
+section.categorias .pais .foto {
   width: 100%;
   height: 80%;
   border-radius: 10px 10px 0px 0px;
 }
 
-section#categorias .pais .descripcion {
+section.categorias .pais .descripcion {
   width: 100%;
   height: 20%;
   text-align: center;
@@ -164,37 +160,101 @@ section#categorias .pais .descripcion {
   font-weight: bold;
 }
 
-section#categorias .pais div#argentina {
-  background: url("argentina.jpg");
+section.categorias .pais div#argentina {
+  background: url("fotos/argentina.jpg");
   background-size: cover;
 }
 
-section#categorias .pais div#brasil {
-  background: url("brasil.jpg");
+section.categorias .pais div#brasil {
+  background: url("fotos/brasil.jpg");
   background-size: cover;
 }
 
-section#categorias .pais div#uruguay {
-  background: url("uruguay.jpg");
+section.categorias .pais div#uruguay {
+  background: url("fotos/uruguay.jpg");
   background-size: cover;
 }
 
-section#categorias .pais div#paraguay {
-  background: url("paraguay.jpg");
+section.categorias .pais div#paraguay {
+  background: url("fotos/paraguay.jpg");
   background-size: cover;
 }
 
-section#categorias .pais div#bolivia {
-  background: url("bolivia.jpg");
+section.categorias .pais div#bolivia {
+  background: url("fotos/bolivia.jpg");
   background-size: cover;
 }
 
-section#categorias .pais div#chile {
-  background: url("chile.jpg");
+section.categorias div.pais div#chile {
+  background: url("fotos/chile.jpg");
   background-size: cover;
+}
+
+section.portada {
+  margin: 0; 
+  background: url("fotos/wallpaper.jpg") no-repeat center center scroll;
+  background-size: cover;
+  height:600px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items:center;
+  justify-content: center; 
+}
+section.portada.paseos{
+  background: url("fotos/paseos.jpg") no-repeat center center scroll;
+  margin: 0; 
+  background-size: cover;
+  height:600px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items:center;
+  justify-content: center; 
+}
+
+section.portada h1{
+  color: antiquewhite;
+  font-size: 5em;
+  text-shadow: 0px 5px 0px black;
 }
 
 footer {
-  background: tomato;
-  margin-top: 50px; 
+  display:flex; 
+  flex-direction: row;
+  align-items: center;
+  margin-top: 100px;
+  padding:5px 0px;
+  background: teal;
+  height: 200px;
+  
+} 
+footer div {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+footer .espaciadosuperior {
+  margin-top: 20px;
+  
+}
+
+footer div a {
+  text-decoration: none;
+  color: white;
+  clear: both; 
+  display: block;
+}
+
+.negrita {
+font-weight: bold;
+}
+
+span.logo {
+  font-family: 'Satisfy', cursive;
+}
+
+section.paseos aside.provincias{
+  float: left;
+}
+section.paseos div.destinos{
+
 }
